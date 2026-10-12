@@ -1,0 +1,187 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #e5e7eb;
+    background-color: #0f172a;
+}
+
+/* Navigation */
+header {
+    background-color: #111c33;
+    padding: 20px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo {
+    color: #60a5fa;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: #e5e7eb;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #60a5fa;
+}
+
+/* Home section */
+.hero {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.intro {
+    color: #60a5fa;
+    font-size: 1.2rem;
+}
+
+.hero h1 {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    margin: 10px 0;
+}
+
+.hero h2 {
+    color: #93c5fd;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 600px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 24px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.button:hover {
+    background-color: #1d4ed8;
+}
+
+/* General sections */
+.section {
+    padding: 70px 8%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #93c5fd;
+}
+
+#about p,
+#contact p {
+    max-width: 750px;
+    margin: 12px auto;
+    text-align: center;
+}
+
+/* Project cards */
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+}
+
+.project-card {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.project-card h3 {
+    color: #93c5fd;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    margin-bottom: 20px;
+}
+
+.project-card a {
+    display: inline-block;
+    margin: 5px 10px 5px 0;
+    color: #60a5fa;
+}
+
+.project-card span {
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+/* Contact links */
+#contact a {
+    color: #60a5fa;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #111c33;
+    color: #94a3b8;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    header {
+        padding: 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        min-height: 60vh;
+    }
+
+    .section {
+        padding: 50px 20px;
+    }
+}
